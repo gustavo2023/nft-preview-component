@@ -174,3 +174,33 @@ main {
 .card__title a:hover {
   color: var(--cyan-400);
 }
+
+.card__description {
+  color: var(--blue-500);
+  font-weight: var(--fw-light);
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card__price-container,
+.card__time-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__price {
+  color: var(--cyan-400);
+  font-weight: var(--fw-bold);
+}
+
+.card__time {
+  color: var(--blue-500);
+  font-weight: var(--fw-normal);
+}
