@@ -108,7 +108,7 @@ main {
 
 .card {
   background-color: var(--blue-900);
-  width: 20rem;
+  max-width: 25rem;
   padding: 1.5rem;
   border-radius: 20px;
   display: flex;
@@ -171,7 +171,8 @@ main {
   cursor: pointer;
 }
 
-.card__title a:hover {
+.card__title a:hover,
+.card__creator-name a:hover {
   color: var(--cyan-400);
 }
 
@@ -203,4 +204,38 @@ main {
 .card__time {
   color: var(--blue-500);
   font-weight: var(--fw-normal);
+}
+
+.card__creator-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__avatar-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  overflow: hidden;
+}
+
+.card__avatar {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card__creator-name {
+  color: var(--blue-500);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: var(--fw-normal);
+  transition: color 0.3s ease;
+}
+
+.card__creator-name a {
+  color: var(--white);
+  text-decoration: none;
 }
