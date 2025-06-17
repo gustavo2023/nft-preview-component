@@ -136,7 +136,6 @@ main {
   width: 100%;
   height: auto;
   object-fit: cover;
-  display: block;
 }
 
 .card__overlay {
@@ -163,7 +162,6 @@ main {
 .card__image-link:hover .card__overlay {
   opacity: 1;
   visibility: visible;
-  cursor: pointer;
 }
 
 .card__content {
@@ -179,7 +177,6 @@ main {
   font-weight: var(--fw-bold);
   font-size: 1.5rem;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
 .card__title a:hover,
@@ -252,7 +249,6 @@ main {
   text-decoration: none;
   font-size: 1rem;
   font-weight: var(--fw-normal);
-  transition: color 0.3s ease;
 }
 
 .card__creator-name a {
