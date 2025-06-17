@@ -92,4 +92,23 @@ body {
   font-size: var(--base-font-size);
   background-color: var(--blue-950);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--blue-900);
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 20px;
 }
