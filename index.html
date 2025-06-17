@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main></main>
-</body>
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <div class="card__image-container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="NFT image of an equilibrium"
+            class="card__image"
+          />
+          <img
+            src="./images/icon-view.svg"
+            alt="White eye icon"
+            class="card__overlay-icon"
+          />
+          <div class="card__image-overlay"></div>
+        </div>
+        <div class="card__content">
+          <h2 class="card__title"><a href="#">Equilibrium #3429</a></h2>
+          <p class="card__description">
+            Our Equilibrium collection promotes balance and clam.
+          </p>
+          <div class="card__info">
+            <div class="card__price-container">
+              <img src="./images/icon-ethereum.svg" alt="Ethereum icon" />
+              <span class="card__price">0.041 ETH</span>
+            </div>
+            <div class="card__time-left">
+              <img src="./images/icon-clock.svg" alt="Clock icon" />
+              <span class="card__time">3 days left</span>
+          </div>
+        </div>
+        <div class="card__creator-container">
+          <img
+            src="./images/image-avatar.png"
+            alt="Avatar of the creator"
+            class="card__avatar"
+          />
+          <p class="card__creator-name">Creation of <a href="#">Jules Wyvern</a></p>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
